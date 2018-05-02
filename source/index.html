@@ -1,12 +1,263 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <nav class="page-header__menu menu">
+      <a class="page-header__logo logo">
+          <img class="logo__image" src="img/logo-mobile.svg" alt="Логотоп Мишка">
+          <img class="logo__image--middle" src="img/logo-mobile.svg" alt="Логотип Мишка">
+        </a>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="catalog.html">
+              Каталог товаров
+            </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="form.html">
+              Вязание  на заказ
+            </a>
+        </li>
+      </ul>
+      <ul class="menu__interactive">
+        <li class="menu__item menu__item--search">
+          <form method="get" action="https://echo.htmlacademy.ru" class="menu__search-form">
+            <input class="menu__search" type="search" id="search" name="search">
+            <label class="menu__search-label" for="search">
+                Поиск по сайту
+              </label>
+          </form>
+        </li>
+        <li class="menu__item menu__item--cart">
+          <a class="menu__link" href="#cart">
+              Корзина: пока пуста
+            </a>
+        </li>
+      </ul>
+      <button class="page-header__button humburger" type="button" name="hamburger">
+        </button>
+      <ul class="menu__offer">
+        <li class="menu__item">
+          <a class="menu__link" href="#new">
+              Новые поступления
+            </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#sale">
+              Распродажа
+            </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="decoration-wrapper">
+      <div class="header-block header-block--index">
+        <p class="header-block__delivery">
+          Бесплатная доставка по России
+        </p>
+        <h1 class="header-block__header">
+            Милые штуки ручной<br> работы для дома
+          </h1>
+      </div>
+      <ul class="type-menu">
+        <li class="type-menu__item">
+          <a class="type-menu__link type-menu__link--interior" href="#interior">
+              Предметы<br> интерьера
+            </a>
+        </li>
+        <li class="type-menu__item">
+          <a class="type-menu__link type-menu__link--toys" href="#toys">
+              Детские<br> игрушки
+            </a>
+        </li>
+      </ul>
+    </div>
+    <div class="center-wrapper">
+      <section class="week-product">
+        <h2 class="week-product__header">
+            Вязаные корзинки
+          </h2>
+        <p class="week-product__explanation">
+          Товар недели
+        </p>
+        <div class="week-product__block">
+          <p class="week-product__description">
+            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+          </p>
+          <table class="week-product__characteristics">
+            <tr>
+              <td class="week-product__parametr">
+                Цвет
+              </td>
+              <td class="week-product__value">
+                "Тиффани"/серый
+              </td>
+            </tr>
+            <tr>
+              <td class="week-product__parametr">
+                Диаметр:
+              </td>
+              <td class="week-product__value">
+                25 см
+              </td>
+            </tr>
+            <tr>
+              <td class="week-product__parametr">
+                Высота:
+              </td>
+              <td class="week-product__value">
+                15 см
+              </td>
+            </tr>
+          </table>
+          <img class="week-product__image" src="img/triple-set-mobile@1x.jpg" alt="Фотография товара">
+          <p class="week-product__price">
+            Цена: 990 руб.
+          </p>
+          <a class="week-product__button button" href="#order">
+              Заказать
+            </a>
+        </div>
+      </section>
+      <section class="about-us">
+        <h2 class="about-us__header">
+            Коротко о нас:
+          </h2>
+        <ul class="about-us__advantage-list">
+          <li class="about-us__advantage-item about-us__advantage-item--eco">
+            Экологически <br>чистые материалы
+          </li>
+          <li class="about-us__advantage-item about-us__advantage-item--scandinavian">
+            Скандинавский стиль<br> по российской цене
+          </li>
+          <li class="about-us__advantage-item about-us__advantage-item--like">
+            Увеличивает лайки <br>на фотографиях
+          </li>
+          <li class="about-us__advantage-item about-us__advantage-item--handmade">
+            Связано вкучную с<br> любовью и умилением
+          </li>
+          <li class="about-us__advantage-item about-us__advantage-item--domestic">
+            Поддержка отечественного<br> производителя
+          </li>
+          <li class="about-us__advantage-item about-us__advantage-item--gift">
+            Поставляется в <br>подарочной упаковке
+          </li>
+        </ul>
+      </section>
+      <section class="review">
+        <h2 class="review__header">
+            Отзывы
+          </h2>
+        <div class="review__slider">
+          <div class="review__slides">
+            <blockquote class="review__item">
+              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!
+            </blockquote>
+            <p class="review__author">
+              Анастасия Красильникова
+            </p>
+            <p class="review__email">
+              @misssssiskras
+            </p>
+          </div>
+          <div class="review__controls">
+            <button class="review__button review__button--previous" type="button">
+                  <img class="review__button-image" src="img/icon-left-arrow.svg" alt="предыдущий отзыв">
+                </button>
+            <button class="review__button review__button--next" type="button">
+                    <img class="review__button-image" src="img/icon-right-arrow.svg" alt="следующий отзыв">
+                </button>
+          </div>
+        </div>
+        <a class="review__write button" href="#write">
+            Написать
+          </a>
+      </section>
+    </div>
+    <section class="contacts">
+      <h2 class="contacts__header">
+          Контакты
+        </h2>
+      <div class="contacts__info">
+        <ul class="contacts__row">
+          <li class="contacts__parametr contacts__cell">
+            e-mail:
+          </li>
+          <li class="contacts__value contacts__cell">
+            <a class="contacts__value-link" href="mailto:info@mimimishkashop.ru">
+                info@mimimishkashop.ru
+              </a>
+          </li>
+        </ul>
+        <ul class="contacts__row">
+          <li class="contacts__parametr contacts__cell">
+            адрес:
+          </li>
+          <li class="contacts__value contacts__cell">
+            г. Санкт-Петербург, <br>ул. Большая<br> Конюшенная, <br>д. 19.8, офис 101
+          </li>
+        </ul>
+      </div>
+      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.6497758352821!2d30.32253612929504!3d59.93879419886729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522068064761"
+        allowfullscreen height="457"></iframe>
+      <a class="contacts__write-us-button button" href="#writeform">
+          Напишите нам
+        </a>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <img class="footer__logo" src="img/logo-mobile.svg" alt="Логотоп Мишка">
+      <ul class="footer__social-list social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://www.instagram.com">
+              <img class="social-list__image social-list__image--instagram" src="img/icon-insta.svg" alt="Инстаграм">
+            </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://www.facebook.com">
+              <img class="social-list__image social-list__image--facebook" src="img/icon-fb.svg" alt="Фейсбук">
+            </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://twitter.com/">
+              <img class="social-list__image social-list__image--twitter" src="img/icon-twitter.svg" alt="Твиттер">
+            </a>
+        </li>
+      </ul>
+      <div class="footer__developer">
+        <p class="footer__develope">
+          Разработано
+        </p>
+        <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/logo-htmlacademy.svg" alt="HTML-academy">
+          </a>
+      </div>
+    </div>
+  </footer>
+  <section class="modal-window">
+    <div class="modal-window__overlay">
+      <div class="modal-window__change">
+        <h2 class="modal-window__header">Добавить в корзину</h2>
+        <p class="modal-window__description">
+          Выберите размер:
+        </p>
+        <button class="modal-window__button modal-window__button--s" type="button" name="size s">S</button>
+        <button class="modal-window__button modal-window__button--m" type="button" name="size m">M</button>
+        <button class="modal-window__button modal-window__button--l" type="button" name="size l">L</button>
+        <a class="modal-window__cart-button" href="#cart">
+            Добавить
+          </a>
+      </div>
+    </div>
+  </section>
+</body>
+
 </html>
